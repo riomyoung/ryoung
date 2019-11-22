@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFragment">
+
+
+    <!-- ========== ORDER NUMBER ========== -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="48dp"
+        android:text="Order Number:"
+        app:layout_constraintEnd_toStartOf="@+id/et_order_number"
+        app:layout_constraintTop_toTopOf="@+id/et_order_number" />
+
+    <EditText
+        android:id="@+id/et_order_number"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginTop="8dp"
+        android:hint="order number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/et_order_cost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+
+    <!-- ========== ORDER COST ========== -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="48dp"
+        android:text="Order Cost:"
+        app:layout_constraintEnd_toStartOf="@+id/et_order_cost"
+        app:layout_constraintTop_toTopOf="@+id/et_order_cost" />
+
+    <EditText
+        android:id="@+id/et_order_cost"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="84dp"
+        android:hint="order cost"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/et_order_choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/et_order_choice"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="order choice"
+        app:layout_constraintBottom_toTopOf="@+id/b_go_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/b_go_back"
+        android:text="GO BACK"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="132dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
