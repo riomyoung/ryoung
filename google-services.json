@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1010966399463",
+    "firebase_url": "https://chat-room-179e5.firebaseio.com",
+    "project_id": "chat-room-179e5",
+    "storage_bucket": "chat-room-179e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010966399463:android:2f88bb377600df87071542",
+        "android_client_info": {
+          "package_name": "com.traf7.youngrio.chatroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010966399463-p76r2s5t9egesri2kiclem0knse8fhhp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.traf7.youngrio.chatroom",
+            "certificate_hash": "b1e1a0aa119b5cf051515ec62cf61f8b76b64bfa"
+          }
+        },
+        {
+          "client_id": "1010966399463-ae51pqdvk208727p6dk57g8ba7v07rug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRmZ7jCKLv4Dj2HwYZYcFroDvmhllt2Nc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010966399463-ae51pqdvk208727p6dk57g8ba7v07rug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
