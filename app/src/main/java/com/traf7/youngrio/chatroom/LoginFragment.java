@@ -72,7 +72,7 @@ public class LoginFragment extends Fragment {
         });
 
         mLoginFormView = root.findViewById(R.id.login_form);
-        mProgressView = root.findViewById(R.id.login_progress);
+//        mProgressView = root.findViewById(R.id.login_progress);
 
         mAuth = FirebaseAuth.getInstance();
         Utils.closeKeyboard(getContext(), mEmail);
@@ -147,7 +147,7 @@ public class LoginFragment extends Fragment {
     }
 
     private void showProgress(boolean show) {
-        mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
+//        mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
         mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
     }
 }
