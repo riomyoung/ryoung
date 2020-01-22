@@ -72,7 +72,7 @@ public class LoginFragment extends Fragment {
         });
 
         mLoginFormView = root.findViewById(R.id.login_form);
-//        mProgressView = root.findViewById(R.id.login_progress);
+        mProgressView = root.findViewById(R.id.login_progress);
 
         mAuth = FirebaseAuth.getInstance();
         Utils.closeKeyboard(getContext(), mEmail);
@@ -124,6 +124,7 @@ public class LoginFragment extends Fragment {
         showProgress(true);
 
         String email = mEmail.getText().toString();
+//        final String email = "email";
         String password = mPassword.getText().toString();
 
         mAuth.signInWithEmailAndPassword(email, password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
@@ -132,6 +133,7 @@ public class LoginFragment extends Fragment {
                 if (mCallback != null) {
                     Utils.saveLocalUser(getContext(), Constants.DEFAULT_USER,
                             mEmail.getText().toString(),
+//                            email,
                             authResult.getUser().getUid());
 
                     mCallback.openChat();
@@ -147,7 +149,7 @@ public class LoginFragment extends Fragment {
     }
 
     private void showProgress(boolean show) {
-//        mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
+        mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
         mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
     }
 }
